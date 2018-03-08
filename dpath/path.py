@@ -144,7 +144,7 @@ def match(path, glob):
     return False
 
 def is_glob(string):
-    return any([c in string for c in '*?[]!'])
+    return any(c in string for c in '*?[]!')
 
 def set(obj, path, value, create_missing=True, afilter=None):
     """Set the value of the given path in the object. Path
